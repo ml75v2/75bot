@@ -1,0 +1,6 @@
+FROM python:3.13.5
+WORKDIR /75bot
+COPY requirements.txt /75bot/
+RUN pip install -r requirements.txt
+COPY . /75bot/
+CMD python 75bot.py
